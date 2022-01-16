@@ -4,11 +4,17 @@ public class GameMaster {
     String name;
     ArrayList<Player> Player1 = new ArrayList<>();
     ArrayList<Player> Player2 = new ArrayList<>();
+    ArrayList<Character> player1Character = new ArrayList<>();
+    ArrayList<Character> player2Character = new ArrayList<>();
     public GameMaster(String name){
         var player1 = new Player("プレイヤー１",20);
         var player2 = new Player("プレイヤー2",20);
-        player1.addCharacter(new Character("キャラ1",2,20));
-        player2.addCharacter(new Character("キャラ2",2,5));
+        var character1 = new Character("キャラ1",2,20);
+        var character2 = new Character("キャラ2",2,5);
+        player1.addCharacter(character1);
+        player2.addCharacter(character2);
+        player1Character.add(character1);
+        player2Character.add(character2);
         Player1.add(player1);
         Player2.add(player2);
     }

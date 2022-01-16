@@ -9,9 +9,9 @@ public class Player extends Mob{
     void addCharacter(Character character) {
         characters.add(character);
     }
-
-
-
+    ArrayList<Character> getCharacters(){
+        return characters;
+    }
     void act(ArrayList<Player>targets){
         var commands = new Commands();
     
